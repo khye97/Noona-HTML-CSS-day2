@@ -20,7 +20,7 @@
       </div> 
       <div class="box blue">
         Box 3
-        <button type="button" class="btn-open">누르면 box1과 box2가<br> 나타나요!</button>
+        <button type="button" class="btn-open">누르면 box1과 box2가 나타나요!</button>
       </div> 
     </div>
     <div class="text-box">
@@ -33,32 +33,40 @@
       </p>
     </div>
   </div> 
-    <div class="container2">
-      <h1 class="title">텍스트 꾸미기</h1>
-      <div class="challenge2"> 
-        <h2 class="challenge2-title">HTML Tutorial</h2> 
-        <p class="sub-header">HTML is the standard markup language for Web pages. With HTML you can create your own Website. HTML is easy to learn - You will enjoy it! </p> 
-        <p>
-          he HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript. ... HTML elements are the building blocks of HTML pages.
-        </p> 
-        <br><br>
-        <h2 class="challenge2-title">CSS Tutorial</h2> 
-        <p class="sub-header">
-          CSS is the language we use to style an HTML document.CSS describes how HTML elements should be displayed.This tutorial will teach you CSS from basic to advanced.
-        </p> 
-        <p>
-          Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
-        </p> 
-      </div>
+  <div class="container2">
+    <h1 class="title">텍스트 꾸미기</h1>
+    <div class="challenge2"> 
+      <h2 class="challenge2-title">HTML Tutorial</h2> 
+      <p class="sub-header">HTML is the standard markup language for Web pages. With HTML you can create your own Website. HTML is easy to learn - You will enjoy it! </p> 
+      <p>
+        he HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript. ... HTML elements are the building blocks of HTML pages.
+      </p> 
+      <br><br>
+      <h2 class="challenge2-title">CSS Tutorial</h2> 
+      <p class="sub-header">
+        CSS is the language we use to style an HTML document.CSS describes how HTML elements should be displayed.This tutorial will teach you CSS from basic to advanced.
+      </p> 
+      <p>
+        Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+      </p> 
     </div>
+  </div>
+
+  <a href="https://hye97.tistory.com/61">
+    <div class="link">
+      더 많은 타이포그래피 속성 보러가기
+    </div>
+  </a>
 
     <script>
       document.querySelectorAll('.btn-close')[0].addEventListener('click', function(){
         document.querySelector('.box.red').style.display = 'none';
       });
+
       document.querySelectorAll('.btn-close')[1].addEventListener('click', function(){
         document.querySelector('.box.green').style.visibility = 'hidden';
       });
+
       document.querySelector('.btn-open').addEventListener('click', function(){
         document.querySelector('.box.red').style.display = 'block';
         document.querySelector('.box.green').style.visibility = 'visible';
