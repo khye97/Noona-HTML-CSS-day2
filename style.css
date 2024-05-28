@@ -1,0 +1,29 @@
+.title1 {
+  text-align: center;
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  width: 200px;
+  border: 50px solid red;
+  padding: 50px;
+  margin: 20px;
+}
+
+.box.green {
+  border: 50px solid green;
+}
+
+.box.blue {
+  border: 50px solid blue;
+}
+
+.text-box {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px;
+}
