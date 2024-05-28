@@ -7,18 +7,22 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div>  
-    <h1 class="title1">display : none과 visibility : hidden</h1>
+  <div class="container1">  
+    <h1 class="title">display : none과 visibility : hidden</h1>
     <div class="box-container">
       <div class="box red">
         Box 1 - display:none
-        <button type="button" class="btn-close"> 누르면 box1이 사라져요!</button></div>   
+        <button type="button" class="btn-close"> 누르면 box1이 사라져요!</button>
+      </div>   
       <div class="box green">
         Box 2 - visibility: hidden
-        <button type="button" class="btn-close">누르면 box2가 사라져요!</button></div> 
-      <div class="box blue">Box 3</div> 
+        <button type="button" class="btn-close">누르면 box2가 사라져요!</button>
+      </div> 
+      <div class="box blue">
+        Box 3
+        <button type="button" class="btn-open">누르면 box1과 box2가<br> 나타나요!</button>
+      </div> 
     </div>
-
     <div class="text-box">
       <h3>display: none과 visibility: hidden의 차이</h3>
       <p>
@@ -27,7 +31,25 @@
         또한 display: none은 스크린 리더가 읽지 못하지만 visibility: hidden은 스크린 리더가 읽을 수 있습니다.<br>
         스크린 리더로 홈페이지를 이용하는 사용자를 고려하여 display와 visibility 속성을 적절하게 사용하는 것이 좋겠습니다.<br>
       </p>
-
+    </div>
+  </div> 
+    <div class="container2">
+      <h1 class="title">텍스트 꾸미기</h1>
+      <div class="challenge2"> 
+        <h2 class="challenge2-title">HTML Tutorial</h2> 
+        <p class="sub-header">HTML is the standard markup language for Web pages. With HTML you can create your own Website. HTML is easy to learn - You will enjoy it! </p> 
+        <p>
+          he HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript. ... HTML elements are the building blocks of HTML pages.
+        </p> 
+        <br><br>
+        <h2 class="challenge2-title">CSS Tutorial</h2> 
+        <p class="sub-header">
+          CSS is the language we use to style an HTML document.CSS describes how HTML elements should be displayed.This tutorial will teach you CSS from basic to advanced.
+        </p> 
+        <p>
+          Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+        </p> 
+      </div>
     </div>
 
     <script>
@@ -37,6 +59,10 @@
       document.querySelectorAll('.btn-close')[1].addEventListener('click', function(){
         document.querySelector('.box.green').style.visibility = 'hidden';
       });
+      document.querySelector('.btn-open').addEventListener('click', function(){
+        document.querySelector('.box.red').style.display = 'block';
+        document.querySelector('.box.green').style.visibility = 'visible';
+      })
     </script>
 
  </div>
